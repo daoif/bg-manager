@@ -1,6 +1,6 @@
 {
   "name": "bg-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple background process manager for Windows - run processes in separate terminal windows",
   "main": "dist/cli.js",
   "bin": {
@@ -17,7 +17,9 @@
   "files": [
     "dist",
     "README.md",
-    "README_CN.md"
+    "README_CN.md",
+    "WARP_AGENT_PROMPT.md",
+    "WARP_AGENT_PROMPT_CN.md"
   ],
   "scripts": {
     "build": "tsc",
