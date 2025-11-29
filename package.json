@@ -1,0 +1,51 @@
+{
+  "name": "bg-manager",
+  "version": "1.0.0",
+  "description": "Simple background process manager for Windows - run processes in separate terminal windows",
+  "main": "dist/cli.js",
+  "bin": {
+    "bg": "./dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daoif/bg-manager.git"
+  },
+  "homepage": "https://github.com/daoif/bg-manager#readme",
+  "bugs": {
+    "url": "https://github.com/daoif/bg-manager/issues"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README_CN.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "background",
+    "process",
+    "manager",
+    "daemon",
+    "windows",
+    "terminal",
+    "cli"
+  ],
+  "author": "daoif",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "os": ["win32"],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "tree-kill": "^1.2.2",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/yargs": "^17.0.35",
+    "typescript": "^5.9.3"
+  }
+}
